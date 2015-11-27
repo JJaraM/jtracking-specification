@@ -5,12 +5,8 @@
 package com.jjmsoftsolutions.jtracking.specification;
 
 /**
- * Interface for generic User representation. The User interface represent the
+ * Interface for generic <code>User</code> representation. The User interface represent the
  * user that will be logged into the system.
- * <p>
- * 
- * To log into the system the user need to have a valid email address or a valid
- * username.
  * <p>
  * 
  * @author Jonathan Jara Morales
@@ -94,7 +90,39 @@ public interface User extends SingularId {
 	 * Sets the user's last name
 	 * 
 	 * @param lastName
-	 *            {@link String} instance representing user's lastname
+	 *            {@link String} instance representing user's last name
 	 */
 	void setLastName(String lastName);
+
+	/**
+	 * Gets the user's authorization token
+	 * 
+	 * @param authorizationToken
+	 *            {@link String} instance representing user's authorization
+	 *            token
+	 */
+	String getAuthorizationToken();
+
+	/**
+	 * Sets the user's authorization token
+	 * 
+	 * @return {@link String} instance representing user's token
+	 */
+	void setAutuhorizationToken(String authorizationToken);
+	
+	/**
+	 * Gets the user's account
+	 * 
+	 * @return {@link Account} instance representing user's account
+	 */
+	Account getAccount();
+	
+	/**
+	 * Sets the user's account
+	 * 
+	 * @param name
+	 *            {@link Account} instance representing user's account
+	 */
+	void setAccount(Account account);
+	
 }

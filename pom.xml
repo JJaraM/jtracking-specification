@@ -32,11 +32,25 @@
 	</developers>
 
 	<dependencies>
-		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>
 		<finalName>jtracking-specification</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 </project>
