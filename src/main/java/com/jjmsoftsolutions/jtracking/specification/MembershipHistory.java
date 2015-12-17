@@ -2,7 +2,7 @@ package com.jjmsoftsolutions.jtracking.specification;
 
 import java.util.Date;
 
-public interface MembershipHistory {
+public interface MembershipHistory extends SingularId {
 	
 	Membership getMembership();
 	void setMembership(Membership membership);
